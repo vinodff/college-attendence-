@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <h3>Attendance Portal</h3>
+            </div>
+            <ul class="sidebar-menu">
+                <li><a href="dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                <li><a href="attendance.html"><i class="fas fa-calendar-check"></i> Attendance</a></li>
+                <li class="active"><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+                <li><a href="#" id="logout"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+            </ul>
+        </nav>
+        
+        <main class="content">
+            <header class="content-header">
+                <div class="user-info">
+                    <span id="studentName">John Doe</span>
+                    <span id="studentId">S12345</span>
+                </div>
+            </header>
+            
+            <div class="profile-container">
+                <h2>Student Profile</h2>
+                
+                <div class="profile-card">
+                    <div class="profile-header">
+                        <div class="profile-avatar">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <div class="profile-info">
+                            <h3 id="profileName">John Doe</h3>
+                            <p id="profileId">S12345</p>
+                            <p id="profileEmail">johndoe@example.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="profile-details">
+                        <div class="detail-group">
+                            <h4>Personal Information</h4>
+                            <div class="detail-row">
+                                <span class="detail-label">Date of Birth:</span>
+                                <span class="detail-value">15 May 2000</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Gender:</span>
+                                <span class="detail-value">Male</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Phone:</span>
+                                <span class="detail-value">+1 234 567 8901</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Address:</span>
+                                <span class="detail-value">123 College Street, City, State, ZIP</span>
+                            </div>
+                        </div>
+                        
+                        <div class="detail-group">
+                            <h4>Academic Information</h4>
+                            <div class="detail-row">
+                                <span class="detail-label">Department:</span>
+                                <span class="detail-value">Computer Science</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Semester:</span>
+                                <span class="detail-value">5th Semester</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Batch:</span>
+                                <span class="detail-value">2020-2024</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Advisor:</span>
+                                <span class="detail-value">Dr. Jane Smith</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="profile-actions">
+                        <button class="edit-profile-btn"><i class="fas fa-edit"></i> Edit Profile</button>
+                        <button class="change-password-btn"><i class="fas fa-key"></i> Change Password</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="js/profile.js"></script>
+</body>
+</html>
