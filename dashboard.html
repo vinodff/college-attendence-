@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <h3>Attendance Portal</h3>
+            </div>
+            <ul class="sidebar-menu">
+                <li class="active"><a href="dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                <li><a href="attendance.html"><i class="fas fa-calendar-check"></i> Attendance</a></li>
+                <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+                <li><a href="#" id="logout"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+            </ul>
+        </nav>
+        
+        <main class="content">
+            <header class="content-header">
+                <div class="user-info">
+                    <span id="studentName">John Doe</span>
+                    <span id="studentId">S12345</span>
+                </div>
+            </header>
+            
+            <div class="dashboard-summary">
+                <h2>Attendance Summary</h2>
+                <div class="summary-cards">
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-percentage"></i>
+                        </div>
+                        <div class="card-info">
+                            <h3>Overall Attendance</h3>
+                            <p id="overallAttendance">85%</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-calendar-day"></i>
+                        </div>
+                        <div class="card-info">
+                            <h3>Present Days</h3>
+                            <p id="presentDays">68</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-calendar-times"></i>
+                        </div>
+                        <div class="card-info">
+                            <h3>Absent Days</h3>
+                            <p id="absentDays">12</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="subject-attendance">
+                <h2>Subject-wise Attendance</h2>
+                <div class="subject-list">
+                    <!-- Subject attendance will be populated by JavaScript -->
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
